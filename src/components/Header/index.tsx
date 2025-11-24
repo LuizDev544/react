@@ -8,6 +8,7 @@ const Header = () => {
   const itens = useSelector((state: RootReducer) => state.carrinho.itens)
   const valorTotal = itens.reduce((acc, item) => {
     acc += item.preco
+
     return acc
   }, 0)
 
